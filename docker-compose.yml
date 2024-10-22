@@ -4,3 +4,6 @@ services:
     build:
       context: .
       dockerfile: WebApplication-demo/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
