@@ -1,0 +1,6 @@
+services:
+  webapplication-demo:
+    image: ${DOCKER_REGISTRY-}webapplicationdemo
+    build:
+      context: .
+      dockerfile: WebApplication-demo/Dockerfile
